@@ -44,6 +44,7 @@ public:
     string get_color() const        { return color; }
 
     // write overloaded < operator for the std::list
+    // ordering name, age, color
     bool operator<(const Goat& other) const{
         if (name != other.name) return name < other.name;
         else if (age != other.age) return age < other.age;
